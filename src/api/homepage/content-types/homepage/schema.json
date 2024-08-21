@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "referenceBrands": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.media"
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "primaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "softwareIllustrations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.illustration"
+    },
+    "networkIllustrations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.illustration"
+    },
+    "meetTheTeamInvitation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.card"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.rich-text"
+    }
+  }
+}

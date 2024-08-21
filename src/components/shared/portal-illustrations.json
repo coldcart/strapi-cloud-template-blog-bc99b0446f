@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_portal_illustrations",
+  "info": {
+    "displayName": "Portal Illustrations",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "Screenshots": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.illustration"
+    }
+  }
+}

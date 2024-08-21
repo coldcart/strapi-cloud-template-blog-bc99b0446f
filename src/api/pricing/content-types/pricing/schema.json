@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "pricings",
+  "info": {
+    "singularName": "pricing",
+    "pluralName": "pricings",
+    "displayName": "Pricing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "costShipping": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "costSoftware": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "costFulfillment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "how_it_workss",
+  "info": {
+    "singularName": "how-it-works",
+    "pluralName": "how-it-workss",
+    "displayName": "How It Works",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.header"
+    },
+    "FAQs": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.faq"
+      ]
+    },
+    "ourTeam": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card"
+    },
+    "Screenshots": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.portal-illustrations"
+    },
+    "softwareSolution": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "networkSolution": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.header"
+    }
+  }
+}

@@ -12,16 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
+    "teamMembers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.team-member"
     },
-    "blocks": {
+    "header": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.header"
+    },
+    "aboutSection": {
       "type": "dynamiczone",
       "components": [
-        "shared.media",
-        "shared.quote",
-        "shared.rich-text",
-        "shared.slider"
+        "shared.header",
+        "shared.link"
       ]
     }
   }
