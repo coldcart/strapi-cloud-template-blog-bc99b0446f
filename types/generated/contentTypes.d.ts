@@ -803,6 +803,7 @@ export interface ApiAboutAbout extends Schema.SingleType {
     teamMembers: Attribute.Component<'shared.team-member', true>;
     header: Attribute.Component<'shared.header', true>;
     aboutSection: Attribute.DynamicZone<['shared.header', 'shared.link']>;
+    SEO: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -852,6 +853,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     blocks: Attribute.DynamicZone<
       ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.slider']
     >;
+    SEO: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -996,6 +998,7 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
     networkIllustrations: Attribute.Component<'shared.illustration', true>;
     meetTheTeamInvitation: Attribute.Component<'shared.card'>;
     testimonials: Attribute.Component<'shared.rich-text', true>;
+    SEO: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1032,6 +1035,7 @@ export interface ApiHowItWorksHowItWorks extends Schema.SingleType {
     Screenshots: Attribute.Component<'shared.portal-illustrations'>;
     softwareSolution: Attribute.Component<'shared.header'>;
     networkSolution: Attribute.Component<'shared.header', true>;
+    SEO: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1056,6 +1060,7 @@ export interface ApiPricingPricing extends Schema.SingleType {
     singularName: 'pricing';
     pluralName: 'pricings';
     displayName: 'Pricing';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1065,6 +1070,7 @@ export interface ApiPricingPricing extends Schema.SingleType {
     costShipping: Attribute.Component<'shared.header'>;
     costSoftware: Attribute.Component<'shared.header'>;
     costFulfillment: Attribute.Component<'shared.header'>;
+    SEO: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
