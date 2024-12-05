@@ -9,7 +9,7 @@
   "attributes": {
     "header": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.header"
     },
     "images": {
@@ -25,7 +25,7 @@
     },
     "CTA": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.link"
     }
   }

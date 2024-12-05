@@ -32,11 +32,6 @@
       "repeatable": true,
       "component": "shared.illustration"
     },
-    "networkIllustrations": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.illustration"
-    },
     "meetTheTeamInvitation": {
       "type": "component",
       "repeatable": false,

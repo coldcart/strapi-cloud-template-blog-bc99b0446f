@@ -14,18 +14,12 @@
   "attributes": {
     "header": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.header"
-    },
-    "FAQs": {
-      "type": "dynamiczone",
-      "components": [
-        "shared.faq"
-      ]
     },
     "ourTeam": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.card"
     },
     "Screenshots": {
@@ -38,15 +32,16 @@
       "repeatable": false,
       "component": "shared.header"
     },
-    "networkSolution": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.header"
-    },
     "SEO": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "FAQs": {
+      "displayName": "FAQs",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.fa-qs"
     }
   }
 }

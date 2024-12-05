@@ -995,7 +995,6 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
     heading: Attribute.Component<'shared.header'>;
     primaryCTA: Attribute.Component<'shared.link'>;
     softwareIllustrations: Attribute.Component<'shared.illustration', true>;
-    networkIllustrations: Attribute.Component<'shared.illustration', true>;
     meetTheTeamInvitation: Attribute.Component<'shared.card'>;
     testimonials: Attribute.Component<'shared.rich-text', true>;
     SEO: Attribute.Component<'shared.seo'>;
@@ -1029,13 +1028,12 @@ export interface ApiHowItWorksHowItWorks extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    header: Attribute.Component<'shared.header', true>;
-    FAQs: Attribute.DynamicZone<['shared.faq']>;
-    ourTeam: Attribute.Component<'shared.card', true>;
+    header: Attribute.Component<'shared.header'>;
+    ourTeam: Attribute.Component<'shared.card'>;
     Screenshots: Attribute.Component<'shared.portal-illustrations'>;
     softwareSolution: Attribute.Component<'shared.header'>;
-    networkSolution: Attribute.Component<'shared.header', true>;
     SEO: Attribute.Component<'shared.seo'>;
+    FAQs: Attribute.Component<'shared.fa-qs'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

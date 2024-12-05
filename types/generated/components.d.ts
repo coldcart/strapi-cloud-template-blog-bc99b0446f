@@ -8,9 +8,20 @@ export interface SharedCard extends Schema.Component {
     description: '';
   };
   attributes: {
-    header: Attribute.Component<'shared.header', true>;
+    header: Attribute.Component<'shared.header'>;
     images: Attribute.Media;
-    CTA: Attribute.Component<'shared.link', true>;
+    CTA: Attribute.Component<'shared.link'>;
+  };
+}
+
+export interface SharedFaQs extends Schema.Component {
+  collectionName: 'components_shared_fa_qs';
+  info: {
+    displayName: 'FAQs';
+  };
+  attributes: {
+    questions: Attribute.Component<'shared.faq', true>;
+    header: Attribute.Component<'shared.heading'>;
   };
 }
 
@@ -32,6 +43,18 @@ export interface SharedHeader extends Schema.Component {
     displayName: 'Text Section';
     icon: 'bulletList';
     description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Blocks;
+    illustration: Attribute.Media;
+  };
+}
+
+export interface SharedHeading extends Schema.Component {
+  collectionName: 'components_shared_headings';
+  info: {
+    displayName: 'Heading';
   };
   attributes: {
     title: Attribute.String;
@@ -157,8 +180,10 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'shared.card': SharedCard;
+      'shared.fa-qs': SharedFaQs;
       'shared.faq': SharedFaq;
       'shared.header': SharedHeader;
+      'shared.heading': SharedHeading;
       'shared.illustration': SharedIllustration;
       'shared.link': SharedLink;
       'shared.media': SharedMedia;
