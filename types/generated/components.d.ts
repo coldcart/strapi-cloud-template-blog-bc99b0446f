@@ -167,6 +167,7 @@ export interface SharedTeamMember extends Schema.Component {
   info: {
     displayName: 'Team Member';
     icon: 'user';
+    description: '';
   };
   attributes: {
     Name: Attribute.String;
