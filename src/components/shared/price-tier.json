@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_price_tiers",
+  "info": {
+    "displayName": "priceTier"
+  },
+  "options": {},
+  "attributes": {
+    "minimum": {
+      "type": "integer"
+    },
+    "maximum": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

@@ -17,17 +17,12 @@
       "repeatable": false,
       "component": "shared.header"
     },
-    "costShipping": {
+    "whyColdcart": {
       "type": "component",
       "repeatable": false,
       "component": "shared.header"
     },
-    "costSoftware": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.header"
-    },
-    "costFulfillment": {
+    "costSection": {
       "type": "component",
       "repeatable": false,
       "component": "shared.header"
@@ -36,6 +31,22 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "priceTiers": {
+      "displayName": "priceTier",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.price-tier"
+    },
+    "whatItIncludes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.card"
+    },
+    "isIta3pl": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.card"
     }
   }
 }

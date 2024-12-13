@@ -1065,10 +1065,12 @@ export interface ApiPricingPricing extends Schema.SingleType {
   };
   attributes: {
     heading: Attribute.Component<'shared.header'>;
-    costShipping: Attribute.Component<'shared.header'>;
-    costSoftware: Attribute.Component<'shared.header'>;
-    costFulfillment: Attribute.Component<'shared.header'>;
+    whyColdcart: Attribute.Component<'shared.header'>;
+    costSection: Attribute.Component<'shared.header'>;
     SEO: Attribute.Component<'shared.seo'>;
+    priceTiers: Attribute.Component<'shared.price-tier', true>;
+    whatItIncludes: Attribute.Component<'shared.card'>;
+    isIta3pl: Attribute.Component<'shared.card'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1080,6 +1082,38 @@ export interface ApiPricingPricing extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::pricing.pricing',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProviderProvider extends Schema.SingleType {
+  collectionName: 'providers';
+  info: {
+    singularName: 'provider';
+    pluralName: 'providers';
+    displayName: 'Providers';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    header: Attribute.Component<'shared.heading'>;
+    content: Attribute.Component<'shared.card'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::provider.provider',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::provider.provider',
       'oneToOne',
       'admin::user'
     > &
@@ -1113,6 +1147,7 @@ declare module '@strapi/types' {
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::how-it-works.how-it-works': ApiHowItWorksHowItWorks;
       'api::pricing.pricing': ApiPricingPricing;
+      'api::provider.provider': ApiProviderProvider;
     }
   }
 }

@@ -111,6 +111,18 @@ export interface SharedPortalIllustrations extends Schema.Component {
   };
 }
 
+export interface SharedPriceTier extends Schema.Component {
+  collectionName: 'components_shared_price_tiers';
+  info: {
+    displayName: 'priceTier';
+  };
+  attributes: {
+    minimum: Attribute.Integer;
+    maximum: Attribute.Integer;
+    price: Attribute.Integer;
+  };
+}
+
 export interface SharedQuote extends Schema.Component {
   collectionName: 'components_shared_quotes';
   info: {
@@ -189,6 +201,7 @@ declare module '@strapi/types' {
       'shared.link': SharedLink;
       'shared.media': SharedMedia;
       'shared.portal-illustrations': SharedPortalIllustrations;
+      'shared.price-tier': SharedPriceTier;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
