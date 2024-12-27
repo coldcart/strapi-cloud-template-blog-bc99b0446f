@@ -1103,6 +1103,7 @@ export interface ApiProviderProvider extends Schema.SingleType {
   attributes: {
     header: Attribute.Component<'shared.heading'>;
     content: Attribute.Component<'shared.card'>;
+    SEO: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
